@@ -1,0 +1,74 @@
+html {
+  background: #100a1c;
+  
+}
+
+body {
+  color: #6cacc5;
+  font: 300 18px "Source Sans Pro",sans-serif;
+  margin: 0;
+  padding: 6em 0 0;
+  text-align: center;
+}
+
+h1 {
+    
+  font-weight: 300;
+  margin: 0;
+}
+
+
+
+.calculator {
+  font-size: 28px;
+  margin: 0.5em auto; 
+  width: 10em;
+
+}
+
+.empty{
+    background: #100a1c;
+}
+
+.viewer {
+  background: grey;
+  border:0;
+  margin: 1px;
+  color: #beccf8;
+  float: left;
+  line-height: 3em;
+  text-align: right;
+  overflow:hidden;
+  width: 228px;
+  height: 54px;
+  font:inherit;
+  font-size:1.2em;
+}
+
+
+button {
+  border: 0;
+  background: grey;
+  color: white;
+  cursor: pointer;
+  float: left;
+  font: inherit;
+  margin: 1px;
+  width: 2em;
+  height: 2em;
+}
+    
+  button:hover {
+    background: #201e40;
+  }
+  
+  button:focus {
+    outline: 0;
+ 
+  }
+
+
+.equals{
+    width: 113px;
+}
+
