@@ -35,7 +35,7 @@ Este código tan simple me dió problemas por utilizar como primer argumento un 
 
 Este quizás fué una de los ejercicios que más fáciles me resultaron de ejecutar junto con el pasapalabra en JS.
 
-un Simple for.Each() me solucionó casi la totalidad del mismo.
+un Simple *for.Each()* me solucionó casi la totalidad del mismo.
 
 ```javascript
 
@@ -59,11 +59,11 @@ Seguramente, es el proyecto que más tiempo y quebraderos de cabeza me ha causad
 
 ## Pasapalabra
 
-Un simple do while me hizo falta para tirar adelante con este mini-proyecto.
+Un simple **do while** me hizo falta para tirar adelante con este mini-proyecto.
 
 ## Html y Css
 
 Al venir de diseño, el trabajar en la parte de cliente no me supuso ningún problema, y me encuetro con mucha fluidez
 
-
+[image](/calculadora/calculadora.jpg)
 
