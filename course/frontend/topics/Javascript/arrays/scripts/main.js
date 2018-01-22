@@ -104,19 +104,19 @@ console.log('1) recursiveArrayClone([1, 2, 3, [1, 2, 3]])', res = recursiveArray
 
 //findDifferences //TODO
 
-function findDifferences(a, b){
+function findDifferences(a, b) {
     var word = a.concat(b);
     var counter = 0;
     var differences = [];
 
-    for(var i = 0; i < word.length; i++){
-        
-        for(var j =0; j < world.length; j++){
-            if(word[i] !== word[j]){
+    for (var i = 0; i < word.length; i++) {
+
+        for (var j = 0; j < wordd.length; j++) {
+            if (word[i] !== word[j]) {
                 counter++
                 differences.push(word[i])
             }
-            
+
         }
     }
     return differences
@@ -128,15 +128,15 @@ findDifferences([1, 2, 3], [100, 2, 1, 10])
 
 //sum and product //TODO
 
-function sumAndProduct(a){
+function sumAndProduct(a) {
     var result = '';
 
 }
-sumAndProduct([1,2,3,4])
+sumAndProduct([1, 2, 3, 4])
 
 //addItems
 var result = [];
-function addItems(a){
+function addItems(a) {
     result.push(a)
     return result;
 
@@ -183,7 +183,51 @@ function getRandom(a) {
 }
 console.log(getRandom([1, 2, 3, 4, 5]))
 
-//findDuplicates 
+//findDuplicates TODO
+
+//MergeArrays TODO
+
+function mergeArrays() {
+    var array1 = [1,2,3];
+    var array2 = [2,30,1];
+    var fullArray = [];
+    for(var i = 0; i < array1.length; i++){
+        if (fullArray.indexOf() === -1) {
+            fullArray.push(array1[i]);
+        for (var i = 0; i < array2.length; i++) {
+            if (fullArray.indexOf() === -1) {
+                fullArray.push(array2[i]);
+            }
+        } 
+    }
+    
+    return fullArray;
+}
+console.log(mergeArrays())
+
+// mergeArrays
+
+    function mergeArrays() {
+        var array1 = [1, 2, 3];
+        var array2 = [2, 30, 1];
+
+        for (var i = 0; i < array2.length; i++) {
+
+            if (array1.indexOf(array2[i]) === -1) {
+                array1.push(array2[i]);
+            }
+
+        }
+        return array1
 
 
+    }
+    mergeArrays()
 
+//separateEven
+
+function separateEven(a){
+    var even = a.join('-')
+    return even;
+}
+separateEven(025468)
