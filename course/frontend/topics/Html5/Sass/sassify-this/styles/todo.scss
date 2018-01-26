@@ -1,0 +1,55 @@
+$font-stack: normal 14px courier,sans-serif;
+
+@mixin padding($top, $left, $right, $top ){
+    padding: $top;
+    padding: $left;
+    padding: $right;
+    padding: $top;
+}
+@mixin format-border($color){
+      border: {
+        color: $color;
+        radius:10px;
+        width: 1px;
+    }
+}
+
+body {
+  background-color: white;
+  font: $font-stack;
+  }
+
+.container {
+  padding: 25px;
+  position: fixed; 
+}
+
+.form-login {
+    @include format-border(black);
+  background-color: aquamarine;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+//   border-radius: 10px;
+//   border-color: black;
+//   border-width: 1px; 
+}
+
+h4 {
+  border: 0 solid white;
+  border-bottom-width: 1px;
+  padding-bottom: 10px;
+  text-align: center; 
+}
+
+.form-control {
+    @include format-border(gray);
+//   border-radius: 10px;
+//   border-color: gray;
+//   border-width: 1px; 
+}
+
+.wrapper {
+  text-align: center; 
+}
