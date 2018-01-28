@@ -87,11 +87,13 @@ toUpperCase('january', 'february', 'march', 'april', 'may', 'june', 'july', 'aug
 // everyMonth(['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'])
 // someMonths(['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'])
 
-// //callback
+
+
+//callback
 
 // function accessBar(age, func_tion) {
 
-//     age >= 18 ? func_tion("access") : func_tion();;
+//     age >= 18 ? func_tion("access") : func_tion();
 
 
 // }
@@ -104,7 +106,50 @@ toUpperCase('january', 'february', 'march', 'april', 'may', 'june', 'july', 'aug
 
 // accessBar(8, advisor);
 
+// FIRST WAY, CALLED OTHER FUNCTION AS A CALLBACK
 
+function entry(age, callback) {
+    if (age > 18) {
+        return callback(true)
+    } else {
+        return callback(false)
+    }
+
+}
+
+function functionAllow(allow) {
+    if (allow) {
+        return 'entry!'
+    } else {
+        return 'nope u fu**** child.'
+    }
+}
+
+entry(19, functionAllow) // entry!
+
+
+//---------------------------------------
+// SECOND WAY, CALL A ANONYMOUS FUNCTION AS A CALLBACK
+
+function entry(age, callback) {
+    if (age > 18) {
+        return callback(true)
+    } else {
+        return callback(false)
+    }
+
+}
+
+entry(16, function (allow) {
+    if (allow) {
+        return 'entry!'
+    } else {
+        return 'nope u fu**** child.'
+    }
+}) // 'nope u fu**** child.'
+
+
+console.log(calculator.theValue(4).sum(3).mult(2))
 
 ///
 function Map(arr) {
@@ -113,7 +158,7 @@ function Map(arr) {
         return letter.slice(0, 1).toUpperCase() + letter.slice(1);
 
     });
-    console.log(result)
+    return result;
 }
 Map(['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'])
 

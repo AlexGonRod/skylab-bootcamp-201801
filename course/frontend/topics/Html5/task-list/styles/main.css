@@ -1,0 +1,14 @@
+a {
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+    margin-left: 5px;
+}
+ul{
+    width: 60px;
+}
+li {
+    display: block;
+    width: 60px;
+    
+}

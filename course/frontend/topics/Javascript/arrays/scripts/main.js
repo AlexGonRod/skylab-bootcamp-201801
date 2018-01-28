@@ -226,11 +226,48 @@
 
 // //separateEven
 
-// function separateEven(a){
-//     var even = a.join('-')
-//     return even;
-// }
-// separateEven(025468)
+function separateEven(a) {
+    var result = a.split('');
+    var even = '';
+    console.log(result);
+    for (var i = 0; i < result.length; i++) {
+        if ((result[i] % 2) == 0 && (result[i + 1] % 2) == 0) {
+            even += result[i] + '-';
+        } else {
+            even += result[i];
+        }
+    }
+    return even;
+}
+separateEven('025468')
+
+//MostFrequentItem
+
+function mostFreqent(arr) {
+    var result;
+    var mf = 1;
+    var count = 0;
+
+    for (var i = 0; i < arr.length; i++) {
+        for (var j = 0; j < arr.length; j++) {
+            if (arr[i] == arr[j]) {
+                count++;
+                if (mf < count) {
+                    mf = count;
+                    result = arr[i];
+                }
+
+            }
+        }
+        count = 0;
+    }
+    console.log(result + '(' + mf + ')');
+}
+mostFreqent([3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3])
+
+//moveElements
+
+
 
 //removeDuplicate
     var duplicate = [];
