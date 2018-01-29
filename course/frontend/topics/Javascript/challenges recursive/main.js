@@ -48,3 +48,27 @@ function duplicate(params2) {
 
 }
 console.log(Dpl('aabcbcb'))
+
+
+//
+function Dpl(str){
+    Str = str.split('');
+    result = [];
+    for(var i=0; i < Str.length; i++){
+        resolve(Str[i]);
+    }
+    return result;
+}
+
+function resolve(Str2){
+    if(result.indexOf(Str2) == -1){
+        result.push(Str2);
+    }
+}
+console.log(Dpl('aabcbcb'))
+
+
+///
+function calc(num){
+    return 
+}
