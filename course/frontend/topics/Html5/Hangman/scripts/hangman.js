@@ -1,8 +1,7 @@
-
 function Hangman(palabra, attemps) {
 
     var word = palabra.toUpperCase().split('');
-    var guiones = Array(word.length).fill('_');
+    guiones = Array(word.length).fill('_');
 
     this.isNumeric = function (num) {
         return isNaN(num)
@@ -33,7 +32,7 @@ function Hangman(palabra, attemps) {
                 attemps = 0;
                 return 'Sorry, you have not guessed... the correct word is ' + word.join('').toUpperCase() + '.'
             }
-            return attemps + ' ' + guiones.join(' ')
+            return guiones.join(' ')
         }
 
 
@@ -54,7 +53,7 @@ function Hangman(palabra, attemps) {
                 }
             }
         }
-        return attemps + ' ' + guiones.join(' ')
+        return guiones.join(' ')
     }
 }
 

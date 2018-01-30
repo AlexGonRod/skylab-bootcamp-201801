@@ -41,11 +41,11 @@
                 <div class="border">
                     <div class="play">
                         <h5>You have
-                            <strong> 10 </strong>attemps</h5>
+                            <span class="attemps"> 10 </span> attemps</h5>
                         <div class="guiones">_ _ _ _</div>
                         <p>Enter a word or a letter</p>
                         <div class="inputP">
-                            <input type="text" id = "letter" placeholder="Enter here">
+                            <input type="text" id ="letter" placeholder="Enter here">
                             <button id="try">Try</button>
                         </div>
                     </div>
@@ -57,7 +57,7 @@
                     <div class="win">
                         <h5>Well done!</h5>
                         <p>You have guessed the word in
-                            <strong> 5</strong> attemps</p>
+                            <span id="attemps"> 5 </span> attemps</p>
                         <div class="guiones">_ _ _ _ _ _ _ _ _ _</div>
                         <div class="input"></div>
                         <button id="again">Try again</button>
@@ -80,6 +80,7 @@
 
     <script src="jquery/3.3.1/jquery-3.3.1.min.js"></script>
     <script src="scripts/main.js"></script>
+    <script src="scripts/hangman.js"></script>
 </body>
 
 </html>
