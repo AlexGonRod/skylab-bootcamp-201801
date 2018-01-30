@@ -45,8 +45,7 @@ $(document).ready(function () {
         $('.attemps').text(res.attemps);
         console.log(attemps)
     
-        $('.Play').addClass('hidden');
-        $('.Win').removeClass('hidden');
+        
     });
     
 });

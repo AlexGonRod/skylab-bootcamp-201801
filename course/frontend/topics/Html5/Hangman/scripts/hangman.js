@@ -25,12 +25,12 @@ function Hangman(palabra, attemps) {
             //miramos si es igual a word.
             if (letra === word.join('').toLowerCase()) {
                 attemps = 0;
-                return 'You have guessed the word, well done!'
+                //return 'You have guessed the word, well done!'
             }
             //si no, quita todos los intentos y fuerza el GAME OVER en el siguiente turno.
             else {
                 attemps = 0;
-                return 'Sorry, you have not guessed... the correct word is ' + word.join('').toUpperCase() + '.'
+                //return 'Sorry, you have not guessed... the correct word is ' + word.join('').toUpperCase() + '.'
             }
             return guiones.join(' ')
         }

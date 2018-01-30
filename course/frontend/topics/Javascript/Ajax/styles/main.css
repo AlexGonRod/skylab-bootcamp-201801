@@ -1,0 +1,53 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+  
+}
+
+li {
+    list-style: none;
+}
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #333;
+}
+
+body {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  color: #fff;
+  
+}
+
+
+
+
+/*
+ * Cover
+ */
+.cover {
+    margin-top: 100px;
+    width: 500px;
+    height: 300px;
+    padding: 0 1.5rem;
+}
+
+.hidden {
+    display: none;
+}
