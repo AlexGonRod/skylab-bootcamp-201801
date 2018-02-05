@@ -9,7 +9,7 @@ $('form').submit(function (e) {
         url: "https://quiet-inlet-67115.herokuapp.com/api/search/all?q=" + query,
         success: function (result) {
             console.log(result);
-
+            
             var list = '';
 
             result.forEach(function (v) {
