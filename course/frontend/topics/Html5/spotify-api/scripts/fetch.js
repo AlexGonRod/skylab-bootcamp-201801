@@ -10,19 +10,15 @@ const headers = { Authorization: 'Bearer ' + token }
         .then(res => res.json())
         .then(data => {
             console.log('SEARCH artists', data)
-            
-            
             let dataArtist = data.artists.items
 
-           
-
-                return fetch(`https://api.spotify.com/v1/artists/${artist.id}/albums`, { headers })
+            return fetch(`https://api.spotify.com/v1/artists/${artist.id}/albums`, { headers })
 
             
         })
         .then(res => res.json())
         .then(res => res.json())
-        .catch(err => console.error('Error:', err)) // WARN!!!
+        
         .then(data => {
             // console.log( 'RETRIEVE albums', data)
 
@@ -32,7 +28,7 @@ const headers = { Authorization: 'Bearer ' + token }
     
 
     .then(res => res.json())
-    .catch(err => console.error('Error:', err)) // WARN!!!
+    
     .then(data => {
         // console.log( 'RETRIEVE tracks', data)
 
