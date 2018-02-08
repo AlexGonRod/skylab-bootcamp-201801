@@ -10,15 +10,15 @@ class CounterApp extends React.Component {
 
 decrease = e => {
     e.preventDefault()
-    this.setState(prevState => {
-        return {num: prevState.num -1}
+    this.setState(() => { 
+        return {num:  this.state.num -1}
     })
 }
 
 increase = e => {
     e.preventDefault()
-    this.setState(prevState => {
-        return {num: prevState.num +1}
+    this.setState(() => {
+        return {num: this.state.num +1}
     })
 }
 
