@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+  position: absolute;
+  top:45%;
+  left:36%;
+  font-size: 60px;
+}
+main {
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 10vw);
+    grid-template-rows: repeat(5, 10vw);
+    justify-content: center;
+    text-align: center;
+}
+
+.box {
+    font-size: 25px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    padding: 30px;
+    
+}
+
+
+.box:nth-child(1) {
+  grid-row: 1;
+  grid-column: 1;
+  
+}
+.box:nth-child(2) {
+  grid-row: 1;
+  grid-column: 2;
+  transform: rotate(180deg);
+}
+.box:nth-child(3) {
+  grid-row: 1;
+  grid-column: 3;
+  transform: rotate(180deg);
+}
+.box:nth-child(4) {
+  grid-row: 1;
+  grid-column: 4;
+  transform: rotate(180deg);
+}
+.box:nth-child(5) {
+  grid-row: 1;
+  grid-column: 5;
+  transform: rotate(-90deg);
+}
+.box:nth-child(6) {
+  grid-row: 2;
+  grid-column: 5;
+  transform: rotate(-90deg);
+}
+.box:nth-child(7) {
+  grid-row: 3;
+  grid-column: 5;
+  transform: rotate(-90deg);
+}
+.box:nth-child(8) {
+  grid-row: 4;
+  grid-column: 5;
+  transform: rotate(-90deg);
+}
+.box:nth-child(9) {
+  grid-row: 5;
+  grid-column: 5;
+  transform: rotate(90deg);
+}
+.box:nth-child(10) {
+  grid-row: 5;
+  grid-column: 4;
+}
+.box:nth-child(11) {
+  grid-row: 5;
+  grid-column: 3;
+}
+.box:nth-child(12) {
+  grid-row: 5;
+  grid-column: 2;
+}
+.box:nth-child(13) {
+  grid-row: 5;
+  grid-column: 1;
+  transform: rotate(90deg);
+}
+.box:nth-child(14) {
+  grid-row: 4;
+  grid-column: 1;
+  transform: rotate(90deg);
+}
+.box:nth-child(15) {
+  grid-row: 3;
+  grid-column: 1;
+  transform: rotate(90deg);
+}
+.box:nth-child(16) {
+  grid-row: 2;
+  grid-column: 1;
+  transform: rotate(90deg);
+}
+
+#red {
+  border-top: 15px solid red;
+}
+
+#green {
+  border-top: 15px solid green;
+}
+#blue {
+  border-top: 15px solid blue;
+}
+#orange {
+  border-top: 15px solid orange;
+  
+}
+
+.number1{
+  transform: rotate(135deg)
+}.number5{
+  transform: rotate(-45deg)
+}.number9{
+  transform: rotate(-135deg)
+}.number13{
+  transform: rotate(-45deg)
+}

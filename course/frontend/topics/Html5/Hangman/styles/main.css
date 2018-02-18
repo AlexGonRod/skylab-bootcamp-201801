@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:700|Rammetto+One');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+background: rgb(73, 73, 73);
+font-family: 'Roboto', sans-serif;
+}
+
+.wrap {
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(199, 195, 195);
+    width: 100%;
+    height: 70px;
+    padding: 40px;
+    border-bottom: 2px solid grey;
+}
+
+header h3{
+    font-size: 40px;
+    color: rgba(94, 94, 94, 0.973);
+    font-family: 'Rammetto One', cursive;
+}
+
+header img {
+    filter: invert(100%);
+    opacity: 0.5;
+    width: 60px;
+    height: 60px;
+}
+
+
+
+.wrapper {
+    width: 100%;
+    height: 600px;
+    margin: auto;
+    background: lightgrey;
+    padding: 50px 0 0 0;
+    
+}
+
+.border {
+    background: lightgray;;
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    margin-top:60px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    margin-bottom:16px;
+}
+
+.card {
+    
+    padding:125px 100px;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    
+}
+
+.card #play {
+    background: rgba(197, 197, 197, 0.096);
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.word {
+    
+    margin: auto;
+    padding: 80px;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    
+}
+
+.word h5 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px; 
+}
+
+.word .input {
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    height: 30px;
+    
+}
+.word .input input {
+    width: 200px;
+    padding: 2px;
+}
+
+.word .input .ok{
+    font-family: 'Roboto', sans-serif;
+    background: rgba(197, 197, 197, 0.096);
+    width: 50px;
+    border: 1px solid grey;
+}
+
+.word #fail {
+    font-size: 20px;
+    margin-top:16px;
+}
+
+.play {
+
+    font: inherit;
+    text-align: center;
+    padding: 50px;
+    width: 100%;
+    height: 190px;
+}
+
+.play h5 {
+    
+    width: 100%;
+    font-size: 30px;
+   
+}
+
+.play .guiones {
+    margin-top: 20px;
+}
+
+.play p {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.play .inputP {
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
+    width: 100%;
+    height: 30px;
+    
+}
+.play .inputP input {
+    width: 300px;
+    padding: 2px;
+}
+
+.play .inputP #try{
+    font-family: 'Roboto', sans-serif;
+    background: rgba(197, 197, 197, 0.096);
+    width: 70px;
+    border: 1px solid grey;
+}
+
+
+
+.win {
+    
+    text-align: center;
+    padding: 60px; 
+    width: 100%;
+    height: 250px;
+    font-size: 20px;   
+}
+
+.win h5 {
+    font-size: 40px;
+}
+
+.win p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.win #again {
+    display: inline-block;
+    background: rgba(197, 197, 197, 0.096);
+    width: 100px;
+    height: 30px;
+    margin-top: 30px;
+    border: 1px solid grey;
+}
+
+.lost {
+    
+    text-align: center;
+    padding: 75px;
+    width: 100%;
+    height: 160px;
+    font-size: 20px;  
+}
+
+.lost h5 {
+    font-size: 40px;
+}
+
+.lost #again {
+    font-family: 'Roboto', sans-serif;
+    background: rgba(197, 197, 197, 0.096);
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    margin-top: 30px;
+    border: 1px solid grey;
+}
+
+.hidden {
+    display: none;
+}

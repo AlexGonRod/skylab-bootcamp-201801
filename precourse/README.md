@@ -63,7 +63,7 @@ Un simple **do while** me hizo falta para tirar adelante con este mini-proyecto.
 
 ## Html y Css
 
-Al venir de diseño, el trabajar en la parte de cliente no me supuso ningún problema, y me encuetro con mucha fluidez
+Al venir de diseño, el trabajar en la parte de cliente no me supuso ningún problema, y me encuentro con mucha fluidez.
 
-[image](/calculadora/calculadora.jpg)
+[image](calculadora/calculadora.jpg)
 
