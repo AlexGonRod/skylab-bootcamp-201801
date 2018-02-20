@@ -1,0 +1,1 @@
+console.log('Hello World') //Ejecutar node/index.js en consola
