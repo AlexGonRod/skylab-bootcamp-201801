@@ -74,19 +74,142 @@
 // })
 
 
-const http = require('http')
-const url = process.argv[2]
-const bl = require('bl')
+// const http = require('http')
+// const url = process.argv[2]
 
+// http.get(url, res => {
+//     res.setEncoding('utf-8')
 
-http.get(url, (res) => {
-    res.setEncoding('utf-8')
-    res.pipe('data', bl => {
+//     let info = ''
+    
+//     res.on( 'data', chunk => 
+//             info += chunk)
+    
+//         res.on('end', () => {
+//             console.log(info.length)
+//             console.log(info)
+//         })
+//         res.on('error', console.error)
+//     })
+        // |
+        // |
+        // \/
+    
+// const http = require('http')
+// const url = process.argv[2]
+// const bl = require('bl')
 
-    res.pipe('error', console.error)
-    })
-
+// http.get(url, res => {
+    // res.setEncoding('utf-8')
+    // res.pipe(bl, ((err, data) => {
+    //     if (err) throw err
         
-    })
+//         console.log(data.toString())
+//     }))
+//     res.on('error', concole.error)
+// })
 
 
+
+
+// const http = require('http')
+// const url = process.argv[2]
+// const url2 = process.argv[3]
+// const url3 = process.argv[4]
+// const concatStream = require ('concat-stream')
+
+// http.get(url, res => {
+//     res.setEncoding('utf-8')
+//     res.pipe(concatStream(data => {
+//         console.log(data)
+
+//         http.get(url2, res => {
+//             res.setEncoding('utf-8')
+//             res.pipe(concatStream(data => {
+//                 console.log(data)
+
+//                 http.get(url3, res => {
+//                     res.setEncoding('utf-8')
+//                     res.pipe(concatStream(data => {
+//                         console.log(data)
+//                     }))
+//                 })
+//             }))
+//         })
+//     }))
+//     })
+
+// const http = require('http')
+// const concatStream = require('concat-stream')
+
+// const urlNumber = process.argv.length -2
+// let n = 0
+
+// getResults = () => {
+//     const url = process.argv[n+2]
+//     http.get(url, res => {
+//         res.setEncoding('utf-8')
+//         res.pipe(concatStream(data => {
+//             console.log(data)
+
+//         if(n < urlNumber -1){
+//             n++
+//             getResults()
+//             console.log("lalala")
+//         }
+// })
+// )})
+// }
+// getResults() 
+
+//Probar a hacer una constante array con n urls y hacer una function con un if(hay lenght), ejecuta el codigo
+
+// const net = require('net')
+
+
+// function getTimeDigits(number){
+//    return number < 10 ? '0' + number : number
+// }
+
+// const server = net.createServer(socket => {
+//     const date = new Date()
+
+//     const formattedTime = `${date.getFullYear()}-${getTimeDigits(date.getMonth() +1 )}-${getTimeDigits(date.getDay())} ${getTimeDigits(date.getHours())}:${getTimeDigits(date.getMinutes())}\n`
+
+
+//     socket.write(formattedTime)
+//     socket.on('close', () => console.log('closing socket'))
+    
+// })
+// server.listen(process.argv[2])
+
+
+// const http = require('http')
+// const fs = require('fs')
+// var file = process.argv[3]
+
+// const server = http.createServer((req, res) => {
+
+//     fs.createReadStream(file).pipe(res)
+// })
+
+
+// const port = process.argv[2]
+
+// server.listen(port)
+
+const http = ('http')
+const map = require('through2-map')
+
+const server = http.createServer((req, res) => {
+    if (req.method === 'POST')
+    req.pipe(map(chunk => { 
+    return chunk.toString().toUpperCase().pipe(res)
+    }))
+})
+
+
+
+const port = process.argv[2]
+
+server.listen(port)
