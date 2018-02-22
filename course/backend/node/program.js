@@ -239,7 +239,7 @@
 //         const data = { 
 //             unixtime: date.getTime() 
 //         }
-//         res.writeHead(200, { 'ContentType': 'application/json' }) // Si hay conexxion, envia los datos como JSON
+         res.writeHead(200, { 'ContentType': 'application/json' }) // Si hay conexxion, envia los datos como JSON
 //         res.end(JSON.stringify(data)) // Transforma la fecha en formato JSON en String
 
 //     } else {
