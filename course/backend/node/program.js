@@ -198,18 +198,99 @@
 
 // server.listen(port)
 
-const http = ('http')
-const map = require('through2-map')
+// const http = ('http')
+// const map = require('through2-map')
 
-const server = http.createServer((req, res) => {
-    if (req.method === 'POST')
-    req.pipe(map(chunk => { 
-    return chunk.toString().toUpperCase().pipe(res)
-    }))
+// const server = http.createServer((req, res) => {
+//     if (req.method === 'POST')
+//     req.pipe(map(chunk => { 
+//     return chunk.toString().toUpperCase().pipe(res)
+//     }))
+// })
+
+
+
+// const port = process.argv[2]
+
+// server.listen(port)
+
+// const http = require('http')
+// const url = require('url')
+
+// const server = http.createServer((req, res) => {
+//     const _url = url.parse(req.url, true) // Parse, separa el pathname de la query y true convierte a objeto
+//                                           // Para llegar a la propiedad .url de la query
+
+//     if (_url.pathname === '/api/parsetime'){ //recibe la url en este formato (pathname)
+//         const date = new Date(_url.query.iso) // Crea una nueva fecha en formato iso(iso=2013-08-10T12:10:15.474Z)
+
+//     const data = { // crea objeto fecha
+//         hour: date.getHours(),
+//         minute: date.getMinutes(),
+//         second: date.getSeconds()
+//     }
+
+//     res.writeHead(200, { 'ContentType' : 'application/json' }) // Si hay conexxion, envia los datos como JSON
+//     res.end(JSON.stringify(data)) // Transforma la fecha en formato JSON
+
+//     }else if (_url.pathname === '/api/unixtime') {
+//         const date = new Date(_url.query.iso)
+
+//         const data = { 
+//             unixtime: date.getTime() 
+//         }
+//         res.writeHead(200, { 'ContentType': 'application/json' }) // Si hay conexxion, envia los datos como JSON
+//         res.end(JSON.stringify(data)) // Transforma la fecha en formato JSON en String
+
+//     } else {
+//         res.writeHead(405) 
+//         res.end('Cannot procces that request, MUDAFUCA') // Si la petición falla, enviamos este msg
+//     }
+
+// })
+
+// const port = process.argv[2]
+
+// server.listen(port, () => console.log(`http NIGGA serv's running on da fucka port ${port}`))
+
+
+
+//Transform 
+
+
+// const {Transform  } = require('stream')
+
+// const toUpperCase = new Transform ({
+//     transform(chunk, encoding, proceed) {
+//         this.push(chunk.toString().toUpperCase())
+
+//         proceed()
+//     }
+// })
+
+// proceed.stdin.pipe(toUpperCase).pipe(process.stdout)
+
+
+//Water Cleaner
+
+
+const byline = require('byline')
+const { Transform } = require('stream')
+const fs = require('fs')
+
+const waterIn = fs.createReadStream('water.txt')
+const waterOut = fs.createWriteStream('clean-water.txt')
+const waterByLine = byline.createStream(waterIn)
+
+const waterClean = new Transform ({
+    transform(chunk, encoding, proceed) {
+        const element = chunk.toString()
+
+        if (element === 'H2O'){
+        this.push(`${element}\n`)
+        }
+        proceed()
+    }
 })
 
-
-
-const port = process.argv[2]
-
-server.listen(port)
+waterByLine.pipe(waterIn).pipe(waterOut)
