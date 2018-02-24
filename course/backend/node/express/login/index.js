@@ -13,6 +13,7 @@ app.post('/api/users', urlencoderParser, (req, res) => {
 
     const user = {
         username: req.body.username,
+
         password: req.body.password
 
         
